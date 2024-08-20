@@ -1,0 +1,132 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/leptonica-x64-windows-1.84.1-28697df6-5e18-45ab-aa67-ca124247cd3f",
+  "name": "leptonica:x64-windows@1.84.1 3ac6e21f9a1b7fdd2998f830287b668910e08fb8722e389824a21cd986c98451",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
+    ],
+    "created": "2024-08-20T15:14:07Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "leptonica",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "1.84.1",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@a9c4f4bd6602bf8870169e982d345b686691ba58",
+      "homepage": "https://github.com/DanBloomberg/leptonica",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "An open source library containing software that is broadly useful for image processing and image analysis applications",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "leptonica:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "3ac6e21f9a1b7fdd2998f830287b668910e08fb8722e389824a21cd986c98451",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "DanBloomberg/leptonica",
+      "downloadLocation": "git+https://github.com/DanBloomberg/leptonica@1.84.1",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "968a88d2074717e6f379d2f9b8f7f0d5193fe9b8856051e09e2b31c939689b196a4a9b2cde595ce76ff8ae2784680ef5e68c40709c051d3d23738e862968016f"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/danie/AppData/Local/vcpkg/registries/git-trees/a9c4f4bd6602bf8870169e982d345b686691ba58/fix-pc-and-config.patch",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ce9f6163167f57c0e3d7a5ca9b00f99ac3d4e344c4dc066ca86378278f555b86"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/danie/AppData/Local/vcpkg/registries/git-trees/a9c4f4bd6602bf8870169e982d345b686691ba58/portfile.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bdf29dfd632d4034f74439d2b57de289bfdabe9d3672e2ebf45366b62c038ff5"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/danie/AppData/Local/vcpkg/registries/git-trees/a9c4f4bd6602bf8870169e982d345b686691ba58/vcpkg.json",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f1b28c06e41f625367c93a7fb785aaf922e0ffa246b642c2516d926bb3b6c2d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}
