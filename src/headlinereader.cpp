@@ -185,7 +185,6 @@ float get_average_sym_h(Pix* line)
 Pix* preproccess(Pix* img)
 {
 	std::cout << "Preprocessing image..." << "\n";
-	//Works on exp_works
 	int hw = 2; int hh = 2;
 	int sx = 10; int sy = 15; int smoothx = 2; int smoothy = 2;
 	int thresh = 100; int mincount = 50; int bgval = 255; float scorefract = 0.1;
@@ -194,7 +193,6 @@ Pix* preproccess(Pix* img)
 	img = pixConvolveRGB(img, blur);
 	img = pixConvertRGBToGray(img, 0.0, 0.0, 0.0);
 	img = pixDilateGray(img, 3, 3);
-	////img = pixErodeGray(img, 3, 3);
 	img = pixAddBorder(img, sx, bgval);
 	img = pixOtsuThreshOnBackgroundNorm(img, NULL, sx, sy, thresh, mincount, bgval, smoothx, smoothy, scorefract, NULL);
 
